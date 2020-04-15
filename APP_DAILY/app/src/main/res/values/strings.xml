@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Easy Plans</string>
+    <string name="daily">Daily</string>
+    <string name="we_have_a_lot_of_things_to_do_per_day">We have a lot of things to do per day</string>
+    <string name="sign_in">Sign In</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="for_got_password">Forgot password?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm_the_terms_and_conditions">Confirm the terms &amp; conditions?</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="facebook_application_id">807955263058907</string>
+    <string name="facebook_login_protocol_scheme">fb807955263058907</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bui_huy_hieu">Bui Huy Hieu</string>
+    <string name="i_m_your_supervisor">I\'m your Supervisor</string>
+    <string name="supportapp_gmail_com">SupportApp@gmail.com</string>
+    <string name="infinity">Infinity</string>
+    <string name="blance">Blance</string>
+    <string name="good">Good</string>
+    <string name="health">Health</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="update">Update</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+</resources>

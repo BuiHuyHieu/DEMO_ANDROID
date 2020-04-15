@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:background="@color/colorText"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Login_Form">
+
+    <LinearLayout
+        android:id="@+id/layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/custome_background"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp">
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helveticaneue_medium"
+                android:text="@string/sign_up"
+                android:textColor="@color/colorText"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imgArrowLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_signin"
+                tools:ignore="ContentDescription" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lato_light"
+            android:text="@string/sign_in"
+            android:textColor="@color/colorText"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:fontFamily="@font/helveticaneue_light"
+                android:id="@+id/edt_Email"
+                android:padding="12dp"
+                android:textColorHint="@color/colorText"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:hint="@string/e_mail"
+                android:textColor="@color/colorText"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress" />
+            <EditText
+                android:fontFamily="@font/helveticaneue_light"
+                android:layout_marginTop="20dp"
+                android:id="@+id/edt_Password"
+                android:padding="12dp"
+                android:textColorHint="@color/colorText"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:hint="@string/password"
+                android:textColor="@color/colorText"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="textPassword" />
+            <TextView
+                android:onClick="resetPassword"
+                android:fontFamily="@font/helveticaneue_thin"
+                android:textStyle="italic"
+                android:alpha="0.7"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorText"
+                android:text="@string/for_got_password"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+            android:id="@+id/btSignIn"
+            app:spinning_bar_width="2dp"
+            app:spinning_bar_padding="2dp"
+            app:spinning_bar_color="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/custom_button"
+            android:layout_gravity="center"
+            android:text="@string/sign_in"
+            android:textAllCaps="false"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="@color/com_facebook_button_background_color"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:onClick="handlerLoginWithFaceBook"
+            android:text="@string/login_with_facebook"
+            android:textAllCaps="false"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layout_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/custome_background"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp">
+
+            <ImageView
+                android:rotation="180"
+                android:id="@+id/imgArrowRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:id="@+id/tvSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helveticaneue_medium"
+                android:text="@string/sign_in"
+                android:textColor="@color/colorText"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_add_circle"
+                tools:ignore="ContentDescription" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/lato_light"
+            android:text="@string/sign_up"
+            android:textColor="@color/colorText"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:fontFamily="@font/helveticaneue_light"
+                android:id="@+id/edt_Email_SignUp"
+                android:padding="12dp"
+                android:textColorHint="@color/colorText"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:hint="@string/e_mail"
+                android:textColor="@color/colorText"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress" />
+            <EditText
+                android:fontFamily="@font/helveticaneue_light"
+                android:layout_marginTop="20dp"
+                android:id="@+id/edt_Password_SignUp"
+                android:padding="12dp"
+                android:textColorHint="@color/colorText"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:hint="@string/password"
+                android:textColor="@color/colorText"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="textPassword" />
+            <EditText
+                android:fontFamily="@font/helveticaneue_light"
+                android:layout_marginTop="20dp"
+                android:id="@+id/edt_Confirm_Password_SignUp"
+                android:padding="12dp"
+                android:textColorHint="@color/colorText"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:hint="@string/confirm_password"
+                android:textColor="@color/colorText"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="textPassword" />
+            <CheckBox
+                android:paddingStart="10dp"
+                android:textAlignment="center"
+                android:button="@drawable/custom_check_box"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="italic"
+                android:id="@+id/checkBoxConfirm"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorText"
+                android:text="@string/confirm_the_terms_and_conditions"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+            app:spinning_bar_color="@color/colorText"
+            app:spinning_bar_padding="3dp"
+            app:spinning_bar_width="2dp"
+            android:id="@+id/btSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginTop="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginStart="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/box_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_row_note">
+        <LinearLayout
+            android:layout_width="6dp"
+            android:layout_height="113dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="1dp"
+            android:background="@drawable/custom_line_start" />
+
+        <LinearLayout
+            android:id="@+id/Content_Note"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:ems="12"
+                android:id="@+id/tv_TitleNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helveticaneue_light"
+                android:text="Do my homework"
+                android:textColor="@color/color_NoteTile"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/custom_box_note"
+                android:orientation="vertical">
+
+                <TextView
+                    android:ems="6"
+                    android:layout_marginBottom="4dp"
+                    android:id="@+id/tv_TimeNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/helveticaneue_thin"
+                    android:text="Time: 22:00 "
+                    android:textColor="@color/color_NoteTile"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:ems="12"
+                    android:id="@+id/tv_PlaceNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="Place: My Room"
+                    android:textColor="@color/color_NoteTile"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:ems="12"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="2dp"
+                    android:id="@+id/tv_DescriptionNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:text="Description: Physic "
+                    android:textColor="@color/color_NoteTile"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/bt_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/Content_Note"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="@font/lato_regular"
+            android:minWidth="100dip"
+            android:minHeight="50dip"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="@color/color_NoteTile" />
+        <ImageView
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/bt_done"
+            android:layout_marginTop="10dp"
+            android:id="@+id/bt_edit_note"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_toEndOf="@id/Content_Note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginStart="2dp"
+            android:layout_toRightOf="@id/bt_edit_note"
+            android:layout_marginTop="10dp"
+            android:id="@+id/bt_delete_note"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:layout_below="@+id/bt_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>

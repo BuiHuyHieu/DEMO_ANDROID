@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorHome"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.fragment_home">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTintMode="add"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_add_black_24dp"
+        android:tint="#0926C5"
+        app:backgroundTint="@color/color_FloatButton"
+        app:fabSize="normal"
+        app:rippleColor="#191B1F" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="617dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/custom_background_recyclerview" />
+
+
+</FrameLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorProfiles"
+    tools:context=".fragment.fragment_profile">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="90dp"
+        app:cardBackgroundColor="@color/colorText"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="15dp"
+        app:cardMaxElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardBackgroundColor="@color/colorProfiles"
+                    app:cardCornerRadius="30dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_Avatar"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:src="@drawable/orange"
+                            app:civ_border_color="#000"
+                            app:civ_border_width="1dp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/avatar_Name"
+                            android:layout_width="match_parent"
+                            android:paddingEnd="10dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@id/img_Avatar"
+                            android:fontFamily="@font/bangers"
+                            android:paddingStart="10dp"
+                            android:text="@string/i_m_your_supervisor"
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+
+                            <com.google.android.material.button.MaterialButton
+                                app:strokeWidth="2dp"
+                                app:strokeColor="@color/black"
+                                android:id="@+id/button_SignOut"
+                                android:layout_marginBottom="10dp"
+                                android:backgroundTint="@android:color/transparent"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp"
+                                android:drawablePadding="1dp"
+                                app:iconPadding="-1dp"
+                                app:iconTint="@color/colorText"
+                                app:iconSize="20dp"
+                                app:icon="@drawable/ic_arrow_back"
+                                android:layout_marginStart="20dp"
+                                android:textColor="@color/colorText"
+                                android:textAllCaps="false"
+                                android:text="@string/sign_out"
+                                android:layout_above="@id/img_Avatar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/avatar_Email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/avatar_Name"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="17dp"
+                            android:layout_toEndOf="@id/img_Avatar"
+                            android:alpha="0.5"
+                            android:fontFamily="@font/helveticaneue_medium"
+                            android:text="@string/supportapp_gmail_com"
+                            android:textColor="#000000"
+                            android:textSize="10sp"
+                            android:textStyle="italic"
+                            tools:ignore="SmallSp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-50dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:elevation="20dp"
+                    app:cardBackgroundColor="@color/colorContact"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="18dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/balance"
+                            tools:ingnore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/bangers"
+                            android:text="@string/infinity"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.5"
+                            android:fontFamily="@font/helveticaneue_light"
+                            android:text="@string/blance"
+                            android:textAlignment="center"
+                            android:textColor="#000" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:elevation="20dp"
+                    app:cardBackgroundColor="@color/colorRating"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="18dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/heart"
+                            tools:ingnore="ContentDescription" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/bangers"
+                            android:text="@string/good"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:alpha="0.5"
+                            android:fontFamily="@font/helveticaneue_light"
+                            android:text="@string/health"
+                            android:textAlignment="center"
+                            android:textColor="#000" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/full_name"
+                    android:textColorHint="#000"
+                    app:boxBackgroundColor="@color/colorProfiles"
+                    app:boxStrokeColor="#000"
+                    app:hintTextColor="#000"
+                    app:passwordToggleContentDescription="@string/app_name"
+                    tools:ignore="PrivateResource">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_fullName_Profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableStart="@drawable/man"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:inputType="textPersonName"
+                        android:textColor="#000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/e_mail"
+                    android:textColorHint="#000"
+                    app:boxBackgroundColor="@color/colorProfiles"
+                    app:boxStrokeColor="#000"
+                    app:hintTextColor="#000"
+                    app:passwordToggleContentDescription="@string/app_name"
+                    tools:ignore="PrivateResource">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:focusable="false"
+                        android:id="@+id/edt_Email_Profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableStart="@drawable/plane"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone_number"
+                    android:textColorHint="#000"
+                    app:boxBackgroundColor="@color/colorProfiles"
+                    app:boxStrokeColor="#000"
+                    app:hintTextColor="#000"
+                    app:passwordToggleContentDescription="@string/app_name"
+                    tools:ignore="PrivateResource">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_Phone_Profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableStart="@drawable/phone"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:inputType="phone"
+                        android:textColor="#000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:textColorHint="#000"
+                    app:boxBackgroundColor="@color/colorProfiles"
+                    app:boxStrokeColor="#000"
+                    app:passwordToggleEnabled="true"
+                    app:hintTextColor="#000"
+                    tools:ignore="PrivateResource">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:focusable="false"
+                        android:id="@+id/edt_Password_Profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/transparent"
+                        android:drawableStart="@drawable/key"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/lato_regular"
+                        android:textColor="#000" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/button_Update"
+                    android:textAlignment="center"
+                    android:backgroundTint="@color/colorProfiles"
+                    android:ellipsize="marquee"
+                    android:elevation="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/update"
+                    android:textAllCaps="false"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

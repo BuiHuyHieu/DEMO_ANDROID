@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.main_app">
+    <androidx.viewpager.widget.ViewPager
+        android:clipChildren="false"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        android:overScrollMode="ifContentScrolls"
+        android:clipToPadding="false"
+        android:id="@+id/myViewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+        android:layout_marginBottom="5dp"
+        android:paddingEnd="30dp"
+        android:paddingStart="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/bottom_navigation_constraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custome_bottom_nav"
+        android:elevation="4dp"
+        android:padding="12dp"
+        app:bnc_mode="inside">
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            app:bt_shape="@drawable/custome_itemhome"
+            app:bt_duration="500"
+            android:id="@+id/bottom_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/colorHome"
+            app:bt_colorInactive="@color/colorItem"
+            app:bt_icon="@drawable/ic_home"
+            app:bt_title="Home"
+            app:bt_padding="10dp"
+            app:bt_titlePadding="12dp" />
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            app:bt_duration="500"
+            app:bt_shape="@drawable/custom_item_profile"
+            android:id="@+id/bottom_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/colorProfiles"
+            app:bt_colorInactive="@color/colorItem"
+            app:bt_icon="@drawable/ic_person"
+            app:bt_title="Profile"
+            app:bt_padding="10dp"
+            app:bt_titlePadding="12dp" />
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            app:bt_duration="500"
+            app:bt_shape="@drawable/custom_rating"
+            android:id="@+id/bottom_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/colorRating"
+            app:bt_colorInactive="@color/colorItem"
+            app:bt_icon="@drawable/ic_star"
+            app:bt_title="Rating"
+            app:bt_padding="10dp"
+            app:bt_titlePadding="12dp" />
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            app:bt_duration="500"
+            app:bt_shape="@drawable/custom_contact"
+            android:id="@+id/bottom_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_active="true"
+            app:bt_colorActive="@color/colorContact"
+            app:bt_colorInactive="@color/colorItem"
+            app:bt_icon="@drawable/ic_contact_mail"
+            app:bt_title="Support"
+            app:bt_padding="10dp"
+            app:bt_titlePadding="12dp" />
+    </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorContact"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.fragment_contact">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+
+                <ImageButton
+                    android:layout_margin="10dp"
+                    android:id="@+id/button_Flash"
+                    tools:ignore="ContentDescription"
+                    android:background="@drawable/custom_item_support"
+                    android:src="@mipmap/ic_light_off"
+                    style="@android:style/ButtonBar"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"/>
+                <ImageButton
+                    android:layout_margin="10dp"
+                    android:id="@+id/button_callPhone"
+                    tools:ignore="ContentDescription"
+                    android:background="@drawable/custom_item_support"
+                    android:src="@mipmap/ic_call"
+                    style="@android:style/ButtonBar"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"/>
+                <ImageButton
+                    android:layout_margin="10dp"
+                    android:id="@+id/button_sendSmS"
+                    tools:ignore="ContentDescription"
+                    android:background="@drawable/custom_item_support"
+                    android:src="@mipmap/ic_sms"
+                    style="@android:style/ButtonBar"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    android:layout_height="100dp"
+                    android:layout_width="100dp"/>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </FrameLayout>
+
+
+</FrameLayout>

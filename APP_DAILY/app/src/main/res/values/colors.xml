@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#DED4F4</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorbackGround">#5644C1</color>
+    <color name="colorText">#ffffff</color>
+    <color name="colorButton">#412EB7</color>
+    <color name="colorItem">#728C95</color>
+    <color name="colorRating">#E37470</color>
+    <color name="colorContact">#7EC681</color>
+    <color name="colorProfiles">#FFC321</color>
+    <color name="colorHome">#0459EA</color>
+    
+<!--    color note-->
+    <color name="color_NoteTile">#0F4C88</color>
+    <color name="color_FloatButton">#0F6BF3</color>
+</resources>
